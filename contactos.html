@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevCore - Contacto</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Cabecera y menú de navegación -->
+  <header>
+    <h1>DevCore Solutions</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> INICIO</a></li>
+        <li><a href="nosotros.html"><i class="fa-solid fa-users"></i> NOSOTROS</a></li>
+        <li><a href="blog.html"><i class="fa-solid fa-blog"></i> BLOG</a></li>
+        <li><a href="galeria.html"><i class="fa-solid fa-images"></i> GALERIA</a></li>
+        <li><a href="videos.html"><i class="fa-solid fa-video"></i> VIDEOS</a></li>
+        <li><a href="contactos.html" class="activo"><i class="fa-solid fa-address-book"></i> CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contenido con fondo degradado (linear-gradient) -->
+    <section class="fondo-degradado">
+      <div class="contacto-grid">
+
+        <!-- Tabla con celdas combinadas (colspan) -->
+        <div>
+          <table class="tabla-contacto">
+            <tr>
+              <th colspan="2">Información de Contacto</th>
+            </tr>
+            <tr>
+              <td>Dirección</td>
+              <td>Av. Javier Prado Este 4600 - Lima Perú</td>
+            </tr>
+            <tr>
+              <td>Teléfonos</td>
+              <td>997 577 470 | 980 978 484 | (01) 533 5242</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>info@devcore.com</td>
+            </tr>
+            <tr>
+              <th colspan="2">Horarios de Atención Presencial</th>
+            </tr>
+            <tr>
+              <td colspan="2">Área de Ventas:<br>De Lunes a viernes de 8 am a 6pm</td>
+            </tr>
+          </table>
+          <img class="foto-contacto" src="img/equipo2.jpg" alt="Equipo de DevCore atendiendo en oficina">
+        </div>
+
+        <!-- Formulario -->
+        <form class="formulario" action="#" method="post">
+          <label for="nombre">Nombre y Apellido</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="celular">Celular*</label>
+          <input type="tel" id="celular" name="celular" placeholder="999 999 999" required>
+
+          <label for="correo">Correo electrónico*</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com" required>
+
+          <label for="ruc">RUC - Empresa (opcional)</label>
+          <input type="text" id="ruc" name="ruc">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+
+          <button type="submit">ENVIAR</button>
+        </form>
+      </div>
+
+      <!-- Mapa de Google embebido -->
+      <section class="mapa">
+        <h2>Local Central</h2>
+        <iframe src="https://www.google.com/maps?q=Av.+Javier+Prado+Este+4600,+Lima&amp;output=embed" title="Mapa del Local Central en Av. Javier Prado Este 4600, Lima" loading="lazy" allowfullscreen></iframe>
+      </section>
+    </section>
+    <!-- Redes sociales -->
+    <div class="social-links">
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://discord.com" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </main>
+</body>
+</html>
